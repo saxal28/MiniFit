@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		0360A4E6213B945600B2F104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360A4E5213B945600B2F104 /* AppDelegate.swift */; };
-		0360A4E8213B945600B2F104 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360A4E7213B945600B2F104 /* ViewController.swift */; };
+		0360A4E8213B945600B2F104 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360A4E7213B945600B2F104 /* SettingsVC.swift */; };
 		0360A4EB213B945600B2F104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0360A4E9213B945600B2F104 /* Main.storyboard */; };
 		0360A4EE213B945600B2F104 /* MiniFit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0360A4EC213B945600B2F104 /* MiniFit.xcdatamodeld */; };
 		0360A4F0213B945700B2F104 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0360A4EF213B945700B2F104 /* Assets.xcassets */; };
 		0360A4F3213B945700B2F104 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0360A4F1213B945700B2F104 /* LaunchScreen.storyboard */; };
+		0360A4FE213C2E5100B2F104 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360A4FD213C2E5100B2F104 /* HomeVC.swift */; };
+		0360A500213C307700B2F104 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0360A4FF213C307700B2F104 /* Workout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0360A4E2213B945600B2F104 /* MiniFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0360A4E5213B945600B2F104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0360A4E7213B945600B2F104 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0360A4E7213B945600B2F104 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		0360A4EA213B945600B2F104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0360A4ED213B945600B2F104 /* MiniFit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiniFit.xcdatamodel; sourceTree = "<group>"; };
 		0360A4EF213B945700B2F104 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0360A4F2213B945700B2F104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0360A4F4213B945700B2F104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0360A4FD213C2E5100B2F104 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		0360A4FF213C307700B2F104 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +60,10 @@
 		0360A4E4213B945600B2F104 /* MiniFit */ = {
 			isa = PBXGroup;
 			children = (
+				0360A4FC213B948400B2F104 /* controllers */,
+				0360A4FB213B947900B2F104 /* models */,
+				0360A4FA213B946E00B2F104 /* views */,
 				0360A4E5213B945600B2F104 /* AppDelegate.swift */,
-				0360A4E7213B945600B2F104 /* ViewController.swift */,
 				0360A4E9213B945600B2F104 /* Main.storyboard */,
 				0360A4EF213B945700B2F104 /* Assets.xcassets */,
 				0360A4F1213B945700B2F104 /* LaunchScreen.storyboard */,
@@ -65,6 +71,30 @@
 				0360A4EC213B945600B2F104 /* MiniFit.xcdatamodeld */,
 			);
 			path = MiniFit;
+			sourceTree = "<group>";
+		};
+		0360A4FA213B946E00B2F104 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		0360A4FB213B947900B2F104 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				0360A4FF213C307700B2F104 /* Workout.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		0360A4FC213B948400B2F104 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0360A4E7213B945600B2F104 /* SettingsVC.swift */,
+				0360A4FD213C2E5100B2F104 /* HomeVC.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0360A4EE213B945600B2F104 /* MiniFit.xcdatamodeld in Sources */,
-				0360A4E8213B945600B2F104 /* ViewController.swift in Sources */,
+				0360A4FE213C2E5100B2F104 /* HomeVC.swift in Sources */,
+				0360A4E8213B945600B2F104 /* SettingsVC.swift in Sources */,
+				0360A500213C307700B2F104 /* Workout.swift in Sources */,
 				0360A4E6213B945600B2F104 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
